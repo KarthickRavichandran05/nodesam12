@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>sample Prototype</title>
+	<script type="text/javascript">
+	var txt="Welcome";
+	function showName(){
+		if (!user.input_name.value.match(/[a-zA-Z]$/) && user.input_name.value != "") {
+            user.input_name.value = "";
+            alert("Please Enter only alphabets");
+        }
+
+		document.getElementById('display').innerHTML= txt +" " + document.getElementById("input_name").value ;
+	}
+	function run()
+	{
+		
+	}
+	</script>
+</head>
+<body>
+	<form name="user" action="/conn.js">
+	<label><b>Enter your name</b></label>
+	<input type="text" name="myname" id="input_name">
+	</form>
+	<input type="submit"><br/>
+	<p><span id='display'></span></p>
+</body>
+</html>

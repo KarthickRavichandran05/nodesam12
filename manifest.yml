@@ -1,0 +1,10 @@
+applications:
+- path: .
+  memory: 256M
+  instances: 1
+  domain: mybluemix.net
+  name: nodesam12
+  host: nodesam12
+  disk_quota: 1024M
+  services:
+  - Secure Gateway-bn
